@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="root">
+        <!--Navbar Section-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">QUICK<br />BITE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <button class="btn btn-outline-success" type="submit">Sign In</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+
+        <!--Hero Section-->
+        <img class="pizza" src="https://assets.api.uizard.io/api/cdn/stream/1ae2327d-3a3d-4241-93b4-cbcd3440e737.png" alt="">
+        <img class="lemon" src="https://assets.api.uizard.io/api/cdn/stream/43843a43-2241-4e3c-a2a3-f442cae1f678.png" alt="">
+
+        <div class="hero-section">
+            <h1 class="quote">The quickest way to find the perfect bite</h1>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-container">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Delivery address" aria-label="Search"
+                        style="border-radius: 15px; width: 28rem;">
+                    <span class="material-symbols-outlined" id="search-icon">
+                        search
+                    </span>
+                </div>
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+        </div>
+
+        <!--Accordion Section-->
+        <div id="main">
+            <div class="container">
+                <div class="accordion" id="faq1">
+                    <div class="card">
+                        <div class="card-header" id="faqhead1">
+                            <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#faq11"
+                                aria-expanded="true" aria-controls="faq1">How it works</a>
+                        </div>
+
+                        <div id="faq11" class="collapse show" aria-labelledby="faqhead1" data-parent="#faq1">
+                            
+                            <div class="card-body" id="accordion1">
+                                <div class="info-card">
+                                    <img class="info-image" src="https://assets.api.uizard.io/api/cdn/stream/f6a8cb56-e0e8-498f-9eee-fed4b6f8b682.png">
+                                    <div class="steps">
+                                        <p class="title">Step 1</p>
+                                        <p class="description">Enter your location. Type in your address, or pin your location by enabling location services.</p>
+                                    </div>
+                                </div>
+                                <div class="info-card" id="mid-card">
+                                    <img class="info-image" src="https://assets.api.uizard.io/api/cdn/stream/5f37769c-8965-4b45-b0a6-a8b4b184b84a.png">
+                                    <div class="steps">
+                                        <p class="title">Step 2</p>
+                                        <p class="description">Now select a restaurant and a menu item. You're one step closer to the perfect quick bite.</p>
+                                    </div>
+                                </div>
+                                <div class="info-card">
+                                    <img class="info-image" src="https://assets.api.uizard.io/api/cdn/stream/dd65eac6-19ac-4570-833a-2feaa7d4ff7e.png">
+                                    <div class="steps">
+                                        <p class="title">Step 3</p>
+                                        <p class="description">Settle your payment. Then, sit back and relax as we make your food ready!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="faq2">
+                    <div class="card">
+                        <div class="card-header" id="faqhead1">
+                            <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#faq12"
+                                aria-expanded="true" aria-controls="faq1">Work with QuickBite</a>
+                        </div>
+
+                        <div id="faq12" class="collapse show" aria-labelledby="faqhead1" data-parent="#faq2">
+                            
+                            <div class="card-body" id="accordion2">
+                                <div class="info-card" id="what-we-do">
+                                    <img class="about-image" src="https://assets.api.uizard.io/api/cdn/stream/37e9b725-e9ad-467f-bd0e-66840f6b9ded.png">
+                                    <div class="steps" id="work">
+                                        <p class="title">As a rider</p>
+                                        <p class="description">Earn money by delivering food from restaurants. All you need are the skills and a bike.</p>
+                                        <button id="work-button" class="btn btn-outline-success" type="submit">Ride with us</button>
+                                    </div>
+                                </div>
+                                <div class="info-card" id="what-we-do">
+                                    <img class="about-image" src="https://assets.api.uizard.io/api/cdn/stream/81350b5b-cb11-496a-9662-d5b0d7eee41b.png">
+                                    <div class="steps" id="work">
+                                        <p class="title">As a partner</p>
+                                        <p class="description">QuickBite helps restaurants grow with online ordering, loyalty programs, and more.</p>
+                                        <button id="work-button" class="btn btn-outline-success" type="submit">Partner with us</button>
+                                    </div>
+                                </div>
+                                <div class="info-card" id="last-card">
+                                    <img class="about-image" src="https://assets.api.uizard.io/api/cdn/stream/71644c0a-e068-4aca-8308-59827b23ba3f.png">
+                                    <div class="steps" id="work">
+                                        <p class="title">As a colleague</p>
+                                        <p class="description">Be part of a team that’s building a top-notch delivery service.</p>
+                                        <button id="work-button" class="btn btn-outline-success" type="submit">Work with us</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="faq3">
+                    <div class="card">
+                        <div class="card-header" id="faqhead1">
+                            <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#faq13"
+                                aria-expanded="true" aria-controls="faq1">Download our app</a>
+                        </div>
+
+                        <div id="faq13" class="collapse show" aria-labelledby="faqhead1" data-parent="#faq3">
+                            
+                            <div class="card-body" id="accordion3">
+                                <div class="info-card" id="download">
+                                    <div class="steps" id="download-app">
+                                        <p class="title">Order easily!</p>
+                                        <p class="description">Get the most delicious bites delivered to your door with QuickBite. Our fastest delivery service carries a variety of cuisines from local restaurants.</p>
+                                        <button id="download-button" type="button" class="btn btn-primary">Download</button>
+                                    </div>
+                                    <img class="download-image" src="https://assets.api.uizard.io/api/cdn/stream/e673eb3d-6d4c-43b8-b125-67ac786dfaf1.png">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer Section-->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="logo">
+                <a class="navbar-brand" id="footer-logo" href="#">QUICK<br />BITE</a>
+            </div>
+            <div class="social-links">
+                <div class="columns" id="column1">
+                    <p class="social-names" id="social">Social</p>
+                    <p class="social-names">Facebook</p>
+                    <p class="social-names">Instagram</p>
+                    <p class="social-names">LinkedIn</p>
+                </div>
+                <div class="columns" id="column1">
+                    <p class="social-names">Get help</p>
+                    <p class="social-names">Partner with us</p>
+                    <p class="social-names">Add your restaurant</p>
+                    <p class="social-names">Sign up to deliver</p>
+                </div>
+                <div class="columns" id="column1">
+                    <p class="social-names">Read our blog</p>
+                    <p class="social-names">Buy gift card</p>
+                    <p class="social-names">Restaurants nearby</p>
+                    <p class="social-names">Save on first order</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
